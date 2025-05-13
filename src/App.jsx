@@ -1,9 +1,21 @@
 import ToDoList from "./ToDoList.jsx";
 
 function App() {
-  function addNote() {}
+  const appStyle = {
+    minHeight: '100vh',
+    margin: 0,
+    padding: 0,
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  };
 
-  return <ToDoList />;
+  return (
+    <div style={appStyle}>
+      <ToDoList />
+    </div>
+  );
 }
 
 export default App;
